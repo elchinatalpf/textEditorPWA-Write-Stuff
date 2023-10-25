@@ -36,11 +36,16 @@ export const getDb = async () => {
   return await result;
 };
 
-export const deleteDb = async (id) => {
-  const jateDB = await openDB('jate', 1);
-  const tx = jateDB.transaction('jate', 'readwrite');
-  const result = await request;
-  return result?.value;
-};
+
+// still check for this. don't know if is needed.
+// export const deleteDb = async (id) => {
+//   const jateDB = await openDB('jate', 1);
+//   const tx = jateDB.transaction('jate', 'readwrite');
+//   const store = tx.objectStore('jate');
+//   const request = store.delete(id);
+//   const result = await request;
+//   console.log('result.value', value);
+//   return result;
+// };
 
 initdb();
