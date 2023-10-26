@@ -33,7 +33,7 @@ module.exports = () => {
         name: "Just Another Text Editor",
         short_name: "Jate",
         description: "Never forget your contacts!",
-        background_color: "#22ca3",
+        background_color: "#22ca33",
         start_url: "./",
         publicPath: "./",
         icons: [
