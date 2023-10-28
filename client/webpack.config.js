@@ -32,7 +32,7 @@ module.exports = () => {
         Inject: true,
         name: "Just Another Text Editor",
         short_name: "Jate",
-        description: "Never forget your contacts!",
+        description: "Text Editor ready to use on the browser!",
         background_color: "#22ca33",
         start_url: "./",
         publicPath: "./",
