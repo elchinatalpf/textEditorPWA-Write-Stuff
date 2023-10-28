@@ -37,6 +37,3 @@ registerRoute(
     ],
   })
 );
-
-// TODO
-// registerRoute();

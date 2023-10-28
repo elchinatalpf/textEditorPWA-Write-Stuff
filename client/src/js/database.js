@@ -22,7 +22,6 @@ export const putDb = async (content) => {
   console.log('Data saved to the database', result);
 };
 
-// TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
 
   const jateDB = await openDB('jate', 1);
@@ -32,17 +31,5 @@ export const getDb = async () => {
   const result = await request;
   return result?.jate;
 };
-
-
-// still check for this. don't know if is needed.
-// export const deleteDb = async (id) => {
-//   const jateDB = await openDB('jate', 1);
-//   const tx = jateDB.transaction('jate', 'readwrite');
-//   const store = tx.objectStore('jate');
-//   const request = store.delete(id);
-//   const result = await request;
-//   console.log('result.value', value);
-//   return result;
-// };
 
 initdb();
